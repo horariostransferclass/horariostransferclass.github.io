@@ -12,7 +12,7 @@
             var contraseña = prompt("Por favor, introduce la contraseña:");
 
             if (contraseña === contraseñaCorrecta) {
-                // Si la contraseña es correcta, se muestra el contenido
+		// Si la contraseña es correcta, se muestra el contenido
             } else {
                 // Si la contraseña es incorrecta, redirigimos al usuario o cerramos la página
                 window.location.href = "index.html"; // Redirige a otra página
@@ -55,16 +55,6 @@
 	    margin: 20px auto;
         }
 
-        /* Estilos para el iframe responsivo */
-        .iframe-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0; /* Opcional: quita los bordes del iframe */            
-        }
-
         /* Ajustes para pantallas pequeñas (móviles) en orientación vertical */
         @media (max-width: 768px) and (orientation: portrait) {
             .iframe-container {
@@ -84,19 +74,18 @@
 	    overflow: hidden; /* Evita el scroll en el body */
         }
 
-        .container {
-            max-width: 1000px; /* Ajusta el ancho de la caja */
-            margin: 20px; /* Margen alrededor del contenedor */
-        }
-
         iframe {
+
             width: 100%; /* Ancho completo */
             height: 1000px; /* Altura del iframe */
             border: none;
             overflow: hidden; /* Evita el scroll */
+	
         }
     </style>
 </head>
+
+<body>
 
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" 
 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="370px" height="65px" viewBox="0 0 708.66 67.519" enable-background="new 0 0 708.66 67.519" xml:space="preserve" class="pagex-icon">
@@ -116,21 +105,6 @@ d="M437.906,64.13c1.549,0,2.816-0.853,2.943-1.903c0.014-0.222,0.018-0.389,0.018-
 
 	</a>
 </svg>
-    
-<script>
-        function solicitarContraseña(pagina, contraseñaCorrecta) {
-            var contraseña = prompt("Por favor, introduce la contraseña:");
-
-            if (contraseña === contraseñaCorrecta) {
-                // Redirige al enlace si la contraseña es correcta
-                window.location.href = pagina;
-            } else {
-                alert("Contraseña incorrecta.");
-            }
-        }
-    </script>
-</head>
-<body>
 
     <div class="botones">
 	<a href="reservas.html"><button class="boton">Reservas</button></a>
