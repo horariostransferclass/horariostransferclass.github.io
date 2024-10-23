@@ -104,28 +104,13 @@ d="M437.906,64.13c1.549,0,2.816-0.853,2.943-1.903c0.014-0.222,0.018-0.389,0.018-
 	</a>
 </svg>
 
-    <script>
-        function solicitarContraseña(pagina, contraseñaCorrecta) {
-            var contraseña = prompt("Por favor, introduce la contraseña:");
-
-            if (contraseña === contraseñaCorrecta) {
-                // Redirige al enlace si la contraseña es correcta
-                window.location.href = pagina;
-            } else {
-                alert("Contraseña incorrecta.");
-            }
-        }
-    </script>
 </head>
 <body>
 
     <div class="botones">
-        <button class="boton" onclick="solicitarContraseña('reservas.html', 'Reservas24')">Reservas</button>
-        <button class="boton" onclick="solicitarContraseña('trafico.html', 'Trafico24')">Trafico</button>
-        <button class="boton" onclick="solicitarContraseña('administracion.html', 'Admin24')">Administración</button>
-    </div>
-
-    </div>
+	<a href="reservas.html"><button class="boton">Reservas</button></a>
+	<a href="trafico.html"><button class="boton">Tráfico</button></a>
+	<a href="administracion.html"><button class="boton">Administración</button></a>
 
     </div>
 
