@@ -6,6 +6,15 @@
     <title>Horarios-TransferClass</title>
     <link rel="icon" href="icon-ventana.ico" type="image/x-icon">
     <script>
+        function verificarContraseña(event) {
+            event.preventDefault(); // Evita que el enlace se siga inmediatamente
+            const contraseña = prompt("Introduce la contraseña:");
+            if (contraseña === "Admin24*") { // Cambia "tuContraseña" por la contraseña que desees
+                window.location.href = "https://panel-operaciones.github.io/"; // Cambia por el enlace deseado
+            } else {
+            }
+        }
+
         // Función que pide una contraseña al cargar la página
         function solicitarContraseña() {
             var contraseñaCorrecta = "Reservas24"; // Aquí defines la contraseña correcta
@@ -108,7 +117,9 @@ d="M437.906,64.13c1.549,0,2.816-0.853,2.943-1.903c0.014-0.222,0.018-0.389,0.018-
 	<div class="botones">
 	<button class="boton">Reservas</button></a>
 	<a href="trafico.html"><button class="boton">Tráfico</button></a>
-	<a href="administracion.html"><button class="boton">Administración</button></a>	</div>
+	<a href="https://panel-operaciones.github.io/" onclick="verificarContraseña(event)">
+    <button class="boton">Operaciones</button>
+	</div>
 
 	<div class="iframe-container">
         <!-- iframe excel local -->
